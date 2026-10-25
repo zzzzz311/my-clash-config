@@ -102,7 +102,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'D'
   Airport5:
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/vpngate-nodes/jp50-kr50-nodes-converted.yaml"    #家宽
+    url: "https://lq-free.lancelot.dpdns.org/c/?token=@liqunchannel-ch-bpo49f5w1sa7hvje-1020-1027"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
@@ -113,34 +113,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'E'   #家宽
-
-  Airport6:
-    url: "https://raw.githubusercontent.com/lzhPeterLL/my-clash-config/refs/heads/main/liqun"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport6.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'F'    #家宽  自己仓库
-  Airport7:
-    url: "https://lq-free.lancelot.dpdns.org/c/?token=@liqunchannel-ch-bpo49f5w1sa7hvje-1020-1027"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport7.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'G'   #利群
+      additional-prefix: 'E'   #利群
 
 
 #========= 全局配置 ========#
