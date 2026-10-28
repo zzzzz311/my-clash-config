@@ -102,7 +102,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'D'
   Airport5:
-    url: "https://lq-free.lancelot.dpdns.org/c/?token=@liqunchannel-ch-bpo49f5w1sa7hvje-1020-1027"
+    url: "https://lq-free.lancelot.dpdns.org/c/?token=@liqunchannel-ch-lb5p6r204ts3xuoz-1028-1104"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
@@ -459,6 +459,7 @@ rules:
   - PROCESS-NAME,Weixin.exe,DIRECT
   - PROCESS-NAME,WeChat.exe,DIRECT
   - PROCESS-NAME,WeChatAppEx.exe,DIRECT
+  - DOMAIN-SUFFIX,lancelot.dpdns.org,DIRECT
   - RULE-SET,reject,🛑 广告拦截          
   - RULE-SET,getui,🎯直连           #  国内个推推送服务 
   - RULE-SET,privacy,🛑 广告拦截     # 拦截隐私追踪拦截手机、电脑软件后台偷偷上传用户数据的行为
