@@ -114,7 +114,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'E'   #利群
-
+  Airport6:
+    url: "https://honghong.yyylll.kdns.fr/sub/user/eyJ1IjoidGVzdGFhYTEyMyIsImUiOi0zMDI0MzUxMTI0MzA4ODkwLCJzIjoiMmI0YjRmZDVhZGRjYjg4OSJ9?vip=1&protocol=default"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport6.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'f'   #
 
 #========= 全局配置 ========#
 mode: rule      # 工作模式  rule（规则模式）/ global（全局模式）/ direct（直连模式）
