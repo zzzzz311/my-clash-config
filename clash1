@@ -101,6 +101,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'D'
+  Airport5:
+    url: "https://lq-free.lancelot.dpdns.org/c/?token=@liqunchannel-ch-lb5p6r204ts3xuoz-1028-1104"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport5.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'E'   #利群
 
 
 #========= 全局配置 ========#
@@ -326,7 +339,7 @@ proxy-groups:
       - Airport2
       - Airport3
       - Airport4
-
+      - Airport5 
     filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk|澳门)).)*$"      
       
       #proxies: 
