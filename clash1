@@ -127,7 +127,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'f'   #
-
+  Airport7:
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/lq-subs/lq-ch-subs.yaml"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport7.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'G'   #利群
 #========= 全局配置 ========#
 mode: rule      # 工作模式  rule（规则模式）/ global（全局模式）/ direct（直连模式）
 redir-mode: tproxy
