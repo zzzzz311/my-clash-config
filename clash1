@@ -102,7 +102,8 @@ proxy-providers:
       udp: true
       additional-prefix: 'D'
   Airport5:
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/lq-subs/lq-ch-subs.yaml"
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/liqun-ch-subs-2026-10-31-20-32.age"
+    age-secret-key: 'AGE-SECRET-KEY-1RHZWZZFSQHL5QP0HGD2ZULVRU9JM6RPC0CGWTN93PMV04C0P6VRQPGQ7SG' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
@@ -114,6 +115,11 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'E'   #利群
+  
+  
+  
+  
+  
   Airport6:
     url: "https://honghong.yyylll.kdns.fr/sub/user/eyJ1IjoidGVzdGFhYTEyMyIsImUiOi0zMDI0MzUxMTI0MzA4ODkwLCJzIjoiMmI0YjRmZDVhZGRjYjg4OSJ9?vip=1&protocol=default"
     type: http
