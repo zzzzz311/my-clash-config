@@ -121,7 +121,7 @@ proxy-providers:
   
   
   Airport6:
-    url: "https://honghong.yyylll.kdns.fr/sub/user/eyJ1IjoidGVzdGFhYTEyMyIsImUiOi0zMDI0MzUxMTI0MzA4ODkwLCJzIjoiMmI0YjRmZDVhZGRjYjg4OSJ9?vip=1&protocol=default"
+    url: "https://dashanren.chinat.eu.org/sub?uuid=26524cce-d514-4014-a426-365fb266a14d&host=speedtest.danfengno1.kdns.fr&path=/danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st?ed=8192&ech=1"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport6.yaml
