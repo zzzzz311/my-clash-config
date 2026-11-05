@@ -147,7 +147,6 @@ proxy-providers:
 
 
 
-
 #========= 全局配置 ========#
 mode: rule      # 工作模式  rule（规则模式）/ global（全局模式）/ direct（直连模式）
 redir-mode: tproxy
