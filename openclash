@@ -118,7 +118,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'E'   #利群
   Airport6:
-    url: "https://dashanren.chinat.eu.org/sub?uuid=26524cce-d514-4014-a426-365fb266a14d&host=speedtest.danfengno1.kdns.fr&path=/danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st?ed=8192&ech=1"
+    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport6.yaml
@@ -129,20 +129,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'F'   #
-  Airport7:
-    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport7.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'g'   #
+      additional-prefix: 'f'   #
 
 
 
