@@ -129,19 +129,6 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'f'   #
-  Airport7:
-    url: "https://raw.githubusercontent.com/LancelotRar/free-subs/refs/heads/main/src/vpngate-nodes/all-nodes-generated.yaml"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport7.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'g'   #
 
 
 
