@@ -91,7 +91,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'C'
   Airport4:
-    url: "https://sub.445569.xyz"
+    url: "https://stymei.445569.xyz/"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
@@ -130,7 +130,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'f'   #
-
+  Airport7:
+    url: "https://api.v1.mk/sub?target=clash&insert=false&emoji=true&list=false&clash.doh=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true&diyua=ShadowRocket&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&url=https://textdb.online/Aries1793968899912"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport7.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'g'   #
 
 
 
