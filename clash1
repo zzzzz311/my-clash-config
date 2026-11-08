@@ -89,7 +89,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'C'
   Airport4:
-    url: "https://sub.445569.xyz"
+    url: "https://stymei.445569.xyz/"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
