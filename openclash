@@ -48,7 +48,7 @@ Anchor_AU: &Anchor_AU '^(?i)(?=.*(澳洲|澳大利亚|悉尼|墨尔本|布里斯
 #========= 订阅链接 ========#
 proxy-providers:
   Airport1:
-    url: "https://sub.danhu.dpdns.org/paste/TG@FProxies261024fhU8Dbp/clash"
+    url: "https://anaer.github.io/Sub/proxies.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport1.yaml
@@ -63,7 +63,7 @@ proxy-providers:
     exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
 
   Airport2:
-    url: "https://anaer.github.io/Sub/proxies.yaml"
+    url: "https://sub.maflya.com/?target=clash"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport2.yaml
@@ -75,10 +75,10 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'B'
-    exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
+    #exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
 
   Airport3:
-    url: "https://sub.maflya.com/?target=clash"
+    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
@@ -90,46 +90,6 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'C'
-  Airport4:
-    url: "https://api.v1.mk/sub?target=clash&insert=false&emoji=true&list=false&clash.doh=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true&diyua=ShadowRocket&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&url=https://textdb.online/Aries1793968899912"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport4.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'D'
-  Airport5:
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/liqun-channel-subs/liqun-ch-subs-2026-11-05.age"
-    age-secret-key: 'AGE-SECRET-KEY-1KCWXGKHKD0A44X6ZC72TWRQMMZZ5YQFVVHV7NK7CQLFSXGRGS55SRC093Y' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport5.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'E'   #利群
-  Airport6:
-    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport6.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'f'   #
 
 
 
@@ -272,9 +232,9 @@ proxy-groups:
       - Airport1    
       - Airport2
       - Airport3
-      - Airport4
-      - Airport5 
-      - Airport6      
+      #- Airport4
+      #- Airport5 
+      #- Airport6      
     filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk|澳门)).)*$"      
       
       #proxies: 
