@@ -91,6 +91,29 @@ proxy-providers:
       udp: true
       additional-prefix: 'C'
 
+  Airport4:
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/LancelotRar/free-subs/main/src/liqun-channel-subs/liqun-ch-subs-2026-11-05.age"
+    age-secret-key: 'AGE-SECRET-KEY-1KCWXGKHKD0A44X6ZC72TWRQMMZZ5YQFVVHV7NK7CQLFSXGRGS55SRC093Y' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport4.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'D'   #利群
+
+
+
+
+
+
+
+
+
 
 
 #========= 全局配置 ========#
