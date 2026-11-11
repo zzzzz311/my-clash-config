@@ -376,6 +376,35 @@ rules:
   - PROCESS-NAME,Weixin.exe,DIRECT
   - PROCESS-NAME,WeChat.exe,DIRECT
   - PROCESS-NAME,WeChatAppEx.exe,DIRECT
+  - DOMAIN-SUFFIX,oray.com,DIRECT        # 向日葵
+  - DOMAIN-SUFFIX,sunlogin.com,DIRECT   # 向日葵
+  - DOMAIN-SUFFIX,sunlogin.cn,DIRECT     # 向日葵
+  - DOMAIN-SUFFIX,todesk.com,DIRECT      # ToDesk
+  - DOMAIN-SUFFIX,todesk.cn,DIRECT     # ToDesk
+  - DOMAIN-SUFFIX,anydesk.com,DIRECT      #远程控制类
+  - DOMAIN-SUFFIX,teamviewer.com,DIRECT
+  - DOMAIN-SUFFIX,rustdesk.com,DIRECT
+  - DOMAIN-SUFFIX,rustdesk.org,DIRECT
+  - DOMAIN-SUFFIX,parsec.app,DIRECT
+  - DOMAIN-SUFFIX,moonlight-stream.com,DIRECT
+  - DOMAIN-SUFFIX, sunshineapp.io,DIRECT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - RULE-SET,reject,🛑 广告拦截          
   - RULE-SET,getui,🎯直连           #  国内个推推送服务 
   - RULE-SET,privacy,🛑 广告拦截     # 拦截隐私追踪拦截手机、电脑软件后台偷偷上传用户数据的行为
