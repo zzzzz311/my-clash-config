@@ -90,10 +90,8 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'C'
-
   Airport4:
-    url: "https://gh-proxy.com/https://gist.githubusercontent.com/LancelotRar/941c5aec32833697b8e9077839e05f55/raw/liqun-ch-subs-7obpanf7-2026-11-12.age"
-    age-secret-key: 'AGE-SECRET-KEY-128VX26NGLPWJL2GEV6KN0S9LVLP837K0Z6N7HPFN3KXQHC2ZX02QE3Q7JZ' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
+    url: "https://3xui.995677.xyz/sub?token=c9fb0cbd-5cb7-4964-9671-134bb338a024&type=clash"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
@@ -104,20 +102,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'D'   #利群
-  Airport5:
-    url: "https://3xui.995677.xyz/sub?token=c9fb0cbd-5cb7-4964-9671-134bb338a024&type=clash"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport5.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'e'   #签到
+      additional-prefix: 'D'   #签到
 
 
 
