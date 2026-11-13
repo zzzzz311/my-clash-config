@@ -128,7 +128,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'f'   #  
+      additional-prefix: 'f'     #  
   Airport7:
     url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
     type: http
