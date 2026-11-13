@@ -105,7 +105,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'D'   #利群
-
+  Airport5:
+    url: "https://3xui.995677.xyz/sub?token=c9fb0cbd-5cb7-4964-9671-134bb338a024&type=clash"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport5.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'e'   #签到
 
 
 
