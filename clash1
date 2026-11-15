@@ -74,8 +74,10 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'B'
+
   Airport3:
-    url: "https://api.v1.mk/sub?target=clash&insert=false&emoji=true&list=false&clash.doh=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true&diyua=ShadowRocket&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&url=https://textdb.online/Aries1793968899912"
+    url: "https://gh-proxy.com/https://gist.githubusercontent.com/LancelotRar/941c5aec32833697b8e9077839e05f55/raw/liqun-ch-subs-7obpanf7-2026-11-12.age"
+    age-secret-key: 'AGE-SECRET-KEY-128VX26NGLPWJL2GEV6KN0S9LVLP837K0Z6N7HPFN3KXQHC2ZX02QE3Q7JZ' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
@@ -86,10 +88,10 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'C'
+      additional-prefix: 'C'   #利群
+
   Airport4:
-    url: "https://gh-proxy.com/https://gist.githubusercontent.com/LancelotRar/941c5aec32833697b8e9077839e05f55/raw/liqun-ch-subs-7obpanf7-2026-11-12.age"
-    age-secret-key: 'AGE-SECRET-KEY-128VX26NGLPWJL2GEV6KN0S9LVLP837K0Z6N7HPFN3KXQHC2ZX02QE3Q7JZ' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
+    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
@@ -100,10 +102,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'D'   #利群
-
+      additional-prefix: 'D'     #  
   Airport5:
-    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
+    url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
@@ -114,20 +115,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'E'     #  
-  Airport6:
-    url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport6.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'F'   #自己仓库
+      additional-prefix: 'E'   #自己仓库
 
 
 
