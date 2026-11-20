@@ -78,7 +78,7 @@ proxy-providers:
     #exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
 
   Airport3:
-    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
+    url: "https://gongyi.xino.dpdns.org/s/92d017a2e74d09c0ebf8c7f54a0b1408681afa90eabfafbe55db66f4368df21d"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
@@ -89,7 +89,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'C'
+      additional-prefix: 'C'  #网页签到
   Airport4:
     url: "https://gh-proxy.com/https://gist.githubusercontent.com/LancelotRar/941c5aec32833697b8e9077839e05f55/raw/liqun-ch-subs-0nqk9s8v-2026-11-19.age"
     age-secret-key: 'AGE-SECRET-KEY-19NVN8ZHDUZH7TV7C23ETZEQXPEGG0NKJ0X0YRG8DK0RETKSM0WMQXA3FMF' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
