@@ -503,6 +503,7 @@ rules:
   - DOMAIN-SUFFIX,account.xiaomi.com,DIRECT
   - DOMAIN-KEYWORD,mihome,DIRECT
   - DOMAIN-SUFFIX,xindazhilian.com,DIRECT
+  - DOMAIN-SUFFIX,movy.sx,DIRECT   #电影
   - DOMAIN,i.mi.com,DIRECT
   - DOMAIN,game.163.com,DIRECT                              #网易游戏
   - DOMAIN-SUFFIX,gm.163.com,DIRECT
