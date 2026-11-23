@@ -102,7 +102,7 @@ proxy-providers:
       additional-prefix: 'D |'  
 
   Airport5:
-    url: "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/meta.yaml"
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
