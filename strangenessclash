@@ -329,9 +329,7 @@ proxy-groups:
     use:
       - Airport1    
       - Airport2
-      - Airport3
-      - Airport4
-      - Airport5 
+
     filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk|澳门)).)*$"      
       
       #proxies: 
