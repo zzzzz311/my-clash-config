@@ -46,7 +46,7 @@ Anchor_AU: &Anchor_AU '^(?i)(?=.*(澳洲|澳大利亚|悉尼|墨尔本|布里斯
 #========= 订阅链接 ========#
 proxy-providers:
   Airport1:
-    url: "https://sub.danhu.dpdns.org/paste/TG@FProxies261024fhU8Dbp/clash"
+    url: https://clash-meta.github.io/uploads/2026/11/3-20261116.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport1.yaml
@@ -57,12 +57,12 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'A'
-    exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
+      additional-prefix: 'A |'
+    #exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
 
 
   Airport2:
-    url: "https://sub.maflya.com/?target=clash"
+    url: "https://sunmiao4458.github.io/free-proxy-airport/clash.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport2.yaml
@@ -73,10 +73,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'B'
-
+      additional-prefix: 'B |'
   Airport3:
-    url: "https://fx.pai50288.uk/c/?token=af5459db3afc0209af93d56c413cebd8&client=clash"
+    url: "https://clash-meta.github.io/uploads/2026/11/2-20261114.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
@@ -87,9 +86,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'C'     #  
+      additional-prefix: 'D |'
   Airport4:
-    url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
+    url: "https://clashnode.github.io/uploads/2026/11/0-20261117.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
@@ -100,7 +99,8 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'D'   #自己仓库
+      additional-prefix: 'D |'
+
 
 
 
@@ -428,6 +428,7 @@ rules:
   - DOMAIN-SUFFIX,account.xiaomi.com,DIRECT
   - DOMAIN-KEYWORD,mihome,DIRECT
   - DOMAIN-SUFFIX,xindazhilian.com,DIRECT
+  - DOMAIN-SUFFIX,movy.sx,DIRECT   #电影
   - DOMAIN,i.mi.com,DIRECT
   - DOMAIN,game.163.com,DIRECT                              #网易游戏
   - DOMAIN-SUFFIX,gm.163.com,DIRECT
