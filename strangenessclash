@@ -86,7 +86,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'D |'
+      additional-prefix: 'C |'
   Airport4:
     url: "https://clashnode.github.io/uploads/2026/11/0-20261117.yaml"
     type: http
