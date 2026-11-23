@@ -6,7 +6,7 @@
 
 # ══ 订阅锚点 ══
 #Anchor_PR: &Anchor_PR {type: http, interval: 86400, proxy: DIRECT, health-check: {enable: true, url: 'https://www.g.cn/generate_204', interval: 300}, filter: "^(?!.*(到期|过期|剩余|网址|官网|邮箱|订阅|套餐|流量|说明|重置)).*$"}
-Anchor_OB: &Anchor_OB {type: select, proxies: ["🚀节点选择","♻️自动选择","🏡家宽","⚖️负载均衡","🔯 故障转移", "🇯🇵 日本自动", "🇰🇷 韩国自动", "🇸🇬 新加坡自动", "🇺🇸 美国自动", "🇪🇺 欧洲自动","🇹🇭 泰国自动","🇮🇩 印度尼西亚自动","🇻🇳 越南自动","🇮🇳 印度自动","🇲🇾 马来西亚自动","🇦🇺 澳大利亚自动","🇵🇭 菲律宾自动","🇹🇷 土耳其自动", DIRECT, REJECT]}
+Anchor_OB: &Anchor_OB {type: select, proxies: ["🚀节点选择","♻️自动选择","🏡家宽","⚖️负载均衡", "🇯🇵 日本自动", "🇰🇷 韩国自动", "🇸🇬 新加坡自动", "🇺🇸 美国自动", "🇪🇺 欧洲自动","🇹🇭 泰国自动","🇮🇩 印度尼西亚自动","🇻🇳 越南自动","🇮🇳 印度自动","🇲🇾 马来西亚自动","🇦🇺 澳大利亚自动","🇵🇭 菲律宾自动","🇹🇷 土耳其自动", DIRECT, REJECT]}
 # 广告拦截策略模板
 Anchor_ADV: &Anchor_ADV {type: select, proxies: [REJECT, DIRECT,"🚀节点选择"]}
 # ③ 策略锚点 # 代理组锚点 hidden: true 是为了隐藏地区分组，有需要显示出来的佬友可以删除
@@ -309,7 +309,7 @@ sniffer:
 # ※※※※※※※※※※※※※※※ 代理策略组 ※※※※※※※※※※※※※※※
 # 策略组（按服务分组）
 proxy-groups:
-  - {name: "🚀节点选择", type: select, proxies: ["♻️自动选择","🏡家宽","⚖️负载均衡","🔯 故障转移", "🇯🇵 日本自动", "🇰🇷 韩国自动", "🇸🇬 新加坡自动", "🇺🇸 美国自动", "🇪🇺 欧洲自动","🇹🇭 泰国自动","🇮🇩 印度尼西亚自动","🇻🇳 越南自动","🇮🇳 印度自动","🇲🇾 马来西亚自动","🇦🇺 澳大利亚自动","🇵🇭 菲律宾自动","🇹🇷 土耳其自动"], icon: 'https://raw.githubusercontent.com/sunfing/iNg/main/Icons/GeneralIcons/ClashMeta.png'}
+  - {name: "🚀节点选择", type: select, proxies: ["♻️自动选择","🏡家宽","⚖️负载均衡", "🇯🇵 日本自动", "🇰🇷 韩国自动", "🇸🇬 新加坡自动", "🇺🇸 美国自动", "🇪🇺 欧洲自动","🇹🇭 泰国自动","🇮🇩 印度尼西亚自动","🇻🇳 越南自动","🇮🇳 印度自动","🇲🇾 马来西亚自动","🇦🇺 澳大利亚自动","🇵🇭 菲律宾自动","🇹🇷 土耳其自动"], icon: 'https://raw.githubusercontent.com/sunfing/iNg/main/Icons/GeneralIcons/ClashMeta.png'}
   - {name: "♻️自动选择", <<: *Anchor_UT, filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk|resi|home|isp|eyeball|user|dynamic|家宽|家庭宽带|家庭住宅|住宅宽带|broadband|住宅|家庭|宽带|拨号|利群公益)).)*$", icon: 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/bastyon/default.svg'}
   - {name: "🏡家宽", <<: *Anchor_UT,exclude-type: 'direct|reject',empty-fallback: REJECT, filter: '(?i)^(?=.*(resi|home|isp|eyeball|user|dynamic|家宽|家庭宽带|家庭住宅|住宅宽带|broadband|住宅|家庭|宽带|拨号))((?!(机房|IDC|DataCenter|BGP|Cloud|Server|Azure|AWS|Google)).)*$', icon: 'https://raw.githubusercontent.com/sunfing/iNg/main/Icons/GeneralIcons/Fam.png'}
   
@@ -318,19 +318,7 @@ proxy-groups:
   
 
   - { name: "⚖️负载均衡"  , <<: *base-loadbalance,  filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk)).)*$",icon: 'https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/battledotnet/default.svg'}
-  - name: "🔯 故障转移"
-    type: fallback
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    lazy: true
-    max-failed-times: 3
-    timeout: 3000     
-    empty-fallback: REJECT 
-    use:
-      - Airport1    
-      - Airport2
-
-    filter: "^((?!(中国|直连|台湾|TW|回国|Ls|Tw|HK|香港|Hk|澳门)).)*$"      
+  
       
       #proxies: 
 
