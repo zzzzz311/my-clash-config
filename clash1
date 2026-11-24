@@ -72,7 +72,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'B |'
   Airport3:
-    url: "https://stymei.445569.xyz/"
+    url: "https://gh-proxy.com/raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
