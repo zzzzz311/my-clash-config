@@ -46,7 +46,7 @@ Anchor_AU: &Anchor_AU '^(?i)(?=.*(澳洲|澳大利亚|悉尼|墨尔本|布里斯
 #========= 订阅链接 ========#
 proxy-providers:
   Airport1:
-    url: "https://sub.curtinp.cc.cd/c/?token=8b582d7006648e5e2b3f7e61c92b0cd4"
+    url: "https://gh-proxy.com/raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport1.yaml
@@ -72,7 +72,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'B |'
   Airport3:
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
+    url: "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/meta.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
