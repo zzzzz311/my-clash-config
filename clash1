@@ -180,7 +180,19 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'J |'   #
-
+  Airport11:
+    url: "https://sub.curtinp.cc.cd/c/?token=8b582d7006648e5e2b3f7e61c92b0cd4"
+    type: http
+    interval: 3600
+    path: ./proxy_providers/Airport11.yaml
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+      proxy: DIRECT
+    override:
+      udp: true
+      additional-prefix: 'K |'   #
 
 
 #========= 全局配置 ========#
