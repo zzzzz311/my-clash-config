@@ -136,19 +136,7 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'G |'           #自己仓库
-  Airport8:
-    url: "https://djyot5fqod4q.chinat.eu.org/sub?uuid=26524cce-d514-4014-a426-365fb266a14d&host=pp4q0fyr.stage-node.danfeng4.xyz&path=/danfeng-5w8z4x-mol1ue-mqnk-3399xo5f?ed=2560&ech=1"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport8.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'H |'           #自己仓库
+
 
 
 
