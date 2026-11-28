@@ -136,19 +136,7 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'G |'           #自己仓库
-  Airport8:
-    url: "https://sub.danhu.dpdns.org/paste/TG@FProxies261128YdUIGdC/clash"
-    type: http
-    interval: 3600
-    path: ./proxy_providers/Airport8.yaml
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-      proxy: DIRECT
-    override:
-      udp: true
-      additional-prefix: 'H |'           #
+
 
 
 
