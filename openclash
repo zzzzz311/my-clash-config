@@ -40,11 +40,6 @@ Anchor_AU: &Anchor_AU '^(?i)(?=.*(澳洲|澳大利亚|悉尼|墨尔本|布里斯
 
 
 
-# 节点订阅
-# 将 “订阅链接” 与 “机场名” 替换为所用机场信息； 订阅条数不够可新增，注意开头缩进，不同条数前方 “机场名” 不能重复； 末尾的 “机场名” 作用为每个节点添加机场名称前缀，可自定义。
-#proxy-providers:
-#  机场名: {<<: *Anchor_PR, url: '订阅链接', override: {additional-prefix: '[机场名] '}}
-
 #========= 订阅链接 ========#
 proxy-providers:
   Airport1:
@@ -60,9 +55,6 @@ proxy-providers:
     override:
       udp: true
       additional-prefix: 'A |'
-    #exclude-filter: '(?i)(导航网址|距离下次重置|剩余流量|套餐到期|网址导航|官网|订阅|到期|剩余|重置|免费|试用|应急|群|返利|循环|请不要|请|ping|不要|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|选择|剩余|公益|发布|DIZTNA|通路|登录|禁止|定时|渠道|牢记|永久|余额|阁下|本站|刷新|导航|⚠️|Expire|http|com|\bSign\b|\bLogin\b|\bRegister\b|\bHelp\b|\bFAQ\b)'
-
-
   Airport2:
     url: "https://sub.maflya.com/?target=clash"
     type: http
@@ -77,7 +69,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'B |'
   Airport3:
-    url: "https://stymei.445569.xyz/"
+    url: "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/meta.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport3.yaml
@@ -90,8 +82,7 @@ proxy-providers:
       udp: true
       additional-prefix: 'C |'  
   Airport4:
-    url: "https://gh-proxy.com/https://gist.githubusercontent.com/LancelotRar/941c5aec32833697b8e9077839e05f55/raw/liqun-ch-subs-0nqk9s8v-2026-11-19.age"
-    age-secret-key: 'AGE-SECRET-KEY-19NVN8ZHDUZH7TV7C23ETZEQXPEGG0NKJ0X0YRG8DK0RETKSM0WMQXA3FMF' # 此处填入机场订阅链接解密私钥，如果机场订阅链接需要解密才能使用，请将解密私钥填入单引号中间，否则不要改动此项
+    url: "https://n8rqmwv3tlodu2jk.lancelot.indevs.in/c/?token=@liqunchannel-gp-qf83x5jwvkhmzedl"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport4.yaml
@@ -102,10 +93,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'D |'   #利群
-
+      additional-prefix: 'D |'     #利
   Airport5:
-    url: "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/meta.yaml"
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport5.yaml
@@ -116,9 +106,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'E |'     #  
+      additional-prefix: 'E |'     
   Airport6:
-    url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
+    url: "https://clashnode.github.io/uploads/2026/11/0-20261117.yaml"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport6.yaml
@@ -129,9 +119,9 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'F |'   #自己仓库
+      additional-prefix: 'F |' 
   Airport7:
-    url: "https://3xui.995677.xyz/sub?token=c9fb0cbd-5cb7-4964-9671-134bb338a024&type=clash"
+    url: "https://raw.githubusercontent.com/zzzzz311/my-clash-config/refs/heads/main/liqun"
     type: http
     interval: 3600
     path: ./proxy_providers/Airport7.yaml
@@ -142,7 +132,7 @@ proxy-providers:
       proxy: DIRECT
     override:
       udp: true
-      additional-prefix: 'G |'   #电报签到
+      additional-prefix: 'G |'           #自己仓库
 
 
 
